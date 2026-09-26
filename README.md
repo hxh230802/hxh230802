@@ -1,9 +1,9 @@
 Hi there 👋
 I'm HXH, an undergraduate at Tsinghua University.
 
-🔭 I'm currently working on artificial intelligence.
-🌱 I'm currently learning physics and computer science.
-📫 How to reach me: hxh26@tsinghua.edu.cn
+- 🔭 I'm currently working on artificial intelligence.
+- 🌱 I'm currently learning physics and computer science.
+- 📫 How to reach me: hxh26@tsinghua.edu.cn
 
 <!--
 **hxh230802/hxh230802** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
