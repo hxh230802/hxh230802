@@ -57,7 +57,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
-    <img alt="公开仓库 49 · 星标总数 126 · 组织 2 · 关注者 5" src="assets/stats-light.svg" width="100%">
+    <img alt="GitHub 数字：公开仓库、星标总数、组织与关注者" src="assets/stats-light.svg" width="100%">
   </picture>
 </p>
 
@@ -87,4 +87,7 @@
   组织成员身份是私有的，/users/hxh230802/orgs 返回空数组，所以组织名单写死在
   scripts/build_assets.py 的 ORGS 里。平台数口径：公开仓库数含 fork（就是个公开
   仓库），星标数与语言分布不含 fork（fork 的星属于上游）。
+
+  各 <img> 的 alt 刻意不写具体数字：alt 不在标记区内，Action 不会更新它，
+  写死了就会和卡片对不上（无障碍描述用文字本来也更合适）。
 -->
