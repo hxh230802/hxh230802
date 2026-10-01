@@ -59,13 +59,6 @@ KICKER = "TSINGHUA UNIVERSITY · BEIJING"
 DEK_EN = "Protocols and developer tooling, built in the open."
 DEK_CN = "在清华读本科，自己搭协议与开发者工具。"
 
-# 段落手动断行：SVG 不自动折行，这也正好给了逐行的排版控制权。
-# ("ink" 正文语气，"sec" 次级语气)
-ABOUT_LINES = [
-    ("在清华读本科，方向是人工智能。", "ink"),
-    ("项目都放在两个自己建的组织里。", "sec"),
-]
-
 SETUP = [
     ("写代码", "DeepSeek Harness · Claude"),
     ("编辑器", "VS Code"),
@@ -521,13 +514,6 @@ def block_masthead(p: Panel, data: dict) -> None:
     p.y = 515
 
 
-def block_about(p: Panel) -> None:
-    p.section("关于 · ABOUT")
-    for text, tone in ABOUT_LINES:
-        p.y += 38
-        p.text(MARGIN, text, 26, p.p[tone])
-
-
 def block_selected(p: Panel, data: dict) -> None:
     p.section("作品选 · SELECTED")
     p.gap(14)
@@ -613,8 +599,6 @@ def block_colophon(p: Panel, data: dict) -> None:
 def render_panel(data: dict, palette: dict, suffix: str):
     p = Panel(palette, suffix)
     block_masthead(p, data)
-    p.rule()
-    block_about(p)
     p.rule()
     block_selected(p, data)
     p.rule()
