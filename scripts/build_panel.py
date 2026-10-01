@@ -37,28 +37,39 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 # ---------------------------------------------------------------- 版式常量
 W = 900
-MARGIN = 56
-RIGHT = W - MARGIN          # 844
-CONTENT = RIGHT - MARGIN    # 788
+MARGIN = 68                 # 外边距：比早先的 56 大一圈，气口更足
+RIGHT = W - MARGIN          # 832
+CONTENT = RIGHT - MARGIN    # 764
 
-MID = 450                   # 作品选 / 方式 的竖发丝线
-COL2 = 480                  # 第二栏起点
-SPLIT = 500                 # 刊头左右分栏的竖发丝线
-LEFT_W = 424                # 刊头左栏可用宽度 —— dek 收在这里，不横穿到右栏
-COL_R = 560                 # 刊头右栏起点（连续贡献）
+# 分栏位置按内容宽度的比例推 —— 改 MARGIN 时各栏跟着走，不会留下错位的硬编码
+MID = MARGIN + round(CONTENT * 0.500)    # 作品选 / 方式 的竖发丝线
+COL2 = MARGIN + round(CONTENT * 0.538)   # 第二栏起点
+SPLIT = MARGIN + round(CONTENT * 0.563)  # 刊头左右分栏的竖发丝线
+LEFT_W = SPLIT - MARGIN - 24             # 刊头左栏可用宽度
+COL_R = MARGIN + round(CONTENT * 0.640)  # 刊头右栏起点（连续贡献）
 
 SANS = "Helvetica Neue, Segoe UI, Arial, sans-serif"
 SERIF = "Palatino Linotype, Palatino, Book Antiqua, Georgia, serif"
 SONGTI = "Songti SC, Noto Serif CJK SC, SimSun, serif"
 
-# 底色直接对齐 GitHub 各主题自己的背景（浅色 #FFFFFF / 深色 #0D1117），
-# 面板才不会在页面上显出一块灰板。中性冷灰的取色参考 onethu.github.io
-# （--bg #ffffff / ink #0f1115 / muted #81858c / 边框 #ebeef2）。
-# 强调色仍只保留一支红，别处一律中性。
-LIGHT = {"ground": "#FFFFFF", "ink": "#14171A", "sec": "#6E7278",
-         "rule": "#E7EAEE", "accent": "#C7322E"}
+# 浅色底准备了两套，用 PANEL_WARM=1 切换，方便直接对比后再定：
+#
+#   冷色（默认）底色严格等于 GitHub 浅色主题的 #FFFFFF —— 接缝为零。
+#                中性色取冷灰，参考 onethu.github.io
+#                （--bg #ffffff / ink #0f1115 / muted #81858c / 边框 #ebeef2）。
+#   暖色        底色是暖白 #FDFBF7，只比纯白深约 1%：留住纸感，
+#                但不会像早先的 #F4F2EC（深 4%）那样在页面上显出一块灰板。
+#
+# 深色底一律对齐 GitHub 的 #0D1117；暖色深底会重新引入可见的色块，所以不做。
+# 强调色两套共用同一支红，别处一律中性。
+LIGHT_COOL = {"ground": "#FFFFFF", "ink": "#14171A", "sec": "#6E7278",
+              "rule": "#E7EAEE", "accent": "#C7322E"}
+LIGHT_WARM = {"ground": "#FDFBF7", "ink": "#1A1714", "sec": "#756F66",
+              "rule": "#ECE7DE", "accent": "#C7322E"}
 DARK = {"ground": "#0D1117", "ink": "#E6EDF3", "sec": "#8B949E",
         "rule": "#2A3038", "accent": "#D9564F"}
+
+LIGHT = LIGHT_WARM if os.environ.get("PANEL_WARM") else LIGHT_COOL
 
 KICKER = "TSINGHUA UNIVERSITY · BEIJING"
 # SVG 不自动折行；英文 dek 一行放不进左栏，只能手动断
@@ -460,14 +471,15 @@ class Panel:
     def gap(self, dy):
         self.y += dy
 
-    def rule(self, before=44, after=44):
+    def rule(self, before=60, after=60):
         self.y += before
         self.hline()
         self.y += after
 
     def section(self, label):
-        self.text(MARGIN, label, 22, self.p["accent"], ls=4.0, weight="600")
-        self.y += 46
+        # 小节不再用重复的红色小眉标起头：节与节之间只靠通栏发丝线、字号层级
+        # 和留白区分。留着这个方法是为了万一要回到带标签的版本。
+        self.y += 18
 
     def svg(self, title: str, desc: str) -> str:
         height = int(self.y + MARGIN)
@@ -489,24 +501,23 @@ def block_masthead(p: Panel, data: dict) -> None:
     p.y = 64
     p.text(MARGIN, KICKER, 22, p.p["accent"], ls=4.0, weight="600")
     p.hline(84)
-    p.vline(SPLIT, 112, 452)
+    p.vline(SPLIT, MARGIN + 56, 452)
 
     # 字标缩到左半边，把右半边让给连续贡献。
     # x=42 让 Palatino 的左边距把字形墨迹落到 x=56 的对齐线上。
-    p.text(42, "HXH", 190, p.p["ink"], y=255, family=SERIF, ls=-3, latin=0.72)
+    p.text(MARGIN - 14, "HXH", 190, p.p["ink"], y=255, family=SERIF, ls=-3, latin=0.72)
 
     s = data.get("streak")
     if s:
-        p.text(COL_R, "贡献 · STREAK", 18, p.p["accent"], y=150, ls=2.6, weight="600",
-               cls="sf d1")
-        p.hline(166, x1=COL_R)
+        # 不再给这一块加红眉标：行首的「贡献总数 / 当前连续 / 最长连续」自己说得清
+        p.hline(150, x1=COL_R)
         rows = [
             ("贡献总数", f"{s['total']}", "近 12 个月", None),
             ("当前连续", f"{s['current']}", f"自 {_md(s['current_from'])}" if s["current"] else "今天还没提交", True),
             ("最长连续", f"{s['longest']}", f"{_md(s['longest_from'])} – {_md(s['longest_to'])}" if s["longest"] else "", None),
         ]
         for i, (label, value, sub, is_current) in enumerate(rows):
-            y = 200 + i * 68
+            y = 190 + i * 68
             if is_current:
                 p.flame(COL_R - 18, y + 2)
             p.text(COL_R, label, 19, p.p["sec"], y=y, cls=f"sf d{i + 1}")
@@ -523,7 +534,7 @@ def block_masthead(p: Panel, data: dict) -> None:
         p.text(MARGIN, line, 22, p.p["sec"], y=330 + i * 32,
                family=SERIF, italic=True, latin=0.50, max_w=LEFT_W)
     p.text(MARGIN, DEK_CN, 20, p.p["sec"], y=404, family=SONGTI, max_w=LEFT_W)
-    p.hline(432, x1=MARGIN, x2=112, sw=3, color=p.p["accent"])
+    p.hline(432, x1=MARGIN, x2=MARGIN + 56, sw=3, color=p.p["accent"])
     p.y = 462
 
 
@@ -599,7 +610,7 @@ def block_numbers(p: Panel, data: dict) -> None:
     p.hline()
     p.gap(44)
     p.text(MARGIN, "常用语言", 22, p.p["sec"], ls=3.0)
-    p.text(220, " · ".join(data["langs"]), 24, p.p["ink"])
+    p.text(MARGIN + round(CONTENT * 0.200), " · ".join(data["langs"]), 24, p.p["ink"])
 
 
 def block_colophon(p: Panel, data: dict) -> None:
