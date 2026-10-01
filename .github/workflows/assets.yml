@@ -1,4 +1,4 @@
-name: Refresh profile assets
+name: Refresh profile panel
 
 on:
   schedule:
@@ -8,14 +8,14 @@ on:
   push:
     branches: [main]
     paths:
-      - "scripts/build_assets.py"
+      - "scripts/build_panel.py"
       - ".github/workflows/assets.yml"
 
 permissions:
   contents: write
 
 jobs:
-  assets:
+  panel:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,20 +24,19 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Regenerate data-bearing SVGs and README
+      - name: Regenerate panel and link index
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/build_assets.py
+        run: python scripts/build_panel.py
 
       - name: Commit if changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/masthead-light.svg assets/masthead-dark.svg \
-                  assets/stats-light.svg assets/stats-dark.svg README.md
+          git add assets/panel-light.svg assets/panel-dark.svg README.md
           if git diff --staged --quiet; then
-            echo "assets unchanged; nothing to commit"
+            echo "panel unchanged; nothing to commit"
           else
-            git commit -m "chore(profile): refresh star and repo counts"
+            git commit -m "chore(profile): refresh panel data"
             git push
           fi
