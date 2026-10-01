@@ -22,7 +22,7 @@
 
 *DeepSeek Harness 的整合包与插件生态。*
 
-[DSH-PackForge](https://github.com/DSH-PackForge/DSH-PackForge) 48★ · [dsh-pack-plugin](https://github.com/DSH-PackForge/dsh-pack-plugin) 15★ · [dsh-packforge-app](https://github.com/DSH-PackForge/dsh-packforge-app) 15★ · [dsh-pack-market](https://github.com/DSH-PackForge/dsh-pack-market) 9★
+[DSH-PackForge](https://github.com/DSH-PackForge/DSH-PackForge) 48★ · [dsh-pack-plugin](https://github.com/DSH-PackForge/dsh-pack-plugin) 16★ · [dsh-packforge-app](https://github.com/DSH-PackForge/dsh-packforge-app) 15★ · [dsh-pack-market](https://github.com/DSH-PackForge/dsh-pack-market) 9★
 
 **02 — [KnotLink-Protocol](https://github.com/KnotLink-Protocol)** · 组织 · 9 个仓库
 
