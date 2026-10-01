@@ -1,0 +1,9 @@
+# Content files in this repository are always LF.
+# If they were checked out as CRLF on Windows, the Linux Action would see every
+# line as changed and commit a whole-file diff once a day.
+*.md   text eol=lf
+*.svg  text eol=lf
+*.py   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
