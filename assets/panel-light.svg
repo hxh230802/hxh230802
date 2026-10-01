@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="2277" viewBox="0 0 900 2277" role="img" aria-labelledby="panelTitle panelDesc">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="2224" viewBox="0 0 900 2224" role="img" aria-labelledby="panelTitle panelDesc">
   <title id="panelTitle">HXH — 清华大学 · 北京</title>
-  <desc id="panelDesc">hxh230802 的主页面板：清华大学在读，方向人工智能。近一年贡献 723 次，当前连续 7 天，最长连续 12 天。公开仓库 49 个，星标 127 个，组织 2 个，关注者 5 人。代表项目：DSH-PackForge、KnotLink-Protocol、PyToEXE。</desc>
+  <desc id="panelDesc">hxh230802 的主页面板：清华大学在读，方向人工智能。近一年贡献 724 次，当前连续 7 天，最长连续 12 天。公开仓库 49 个，星标 127 个，组织 2 个，关注者 5 人。代表项目：DSH-PackForge、KnotLink-Protocol、PyToEXE。</desc>
   <style>
     @keyframes streak-pop  { 0% { transform: scale(.3) }
                              76% { transform: scale(1.12) }
@@ -18,76 +18,77 @@
     .d3 { animation-delay: .34s }
     @media (prefers-reduced-motion: reduce) { .sf, .sp, .fl { animation: none } }
   </style>
-  <rect width="900" height="2277" fill="#F4F2EC"/>
+  <rect width="900" height="2224" fill="#FFFFFF"/>
   <text x="56" y="64" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="4.0" fill="#C7322E">TSINGHUA UNIVERSITY · BEIJING</text>
-  <line x1="56" y1="84" x2="844" y2="84" stroke="#D9D6CD" stroke-width="1"/>
-  <line x1="500" y1="112" x2="500" y2="380" stroke="#D9D6CD" stroke-width="1"/>
-  <text x="42" y="255" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="190" letter-spacing="-3" fill="#2A2A28">HXH</text>
+  <line x1="56" y1="84" x2="844" y2="84" stroke="#E7EAEE" stroke-width="1"/>
+  <line x1="500" y1="112" x2="500" y2="452" stroke="#E7EAEE" stroke-width="1"/>
+  <text x="42" y="255" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="190" letter-spacing="-3" fill="#14171A">HXH</text>
   <text x="560" y="150" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="2.6" class="sf d1" fill="#C7322E">贡献 · STREAK</text>
-  <line x1="560" y1="166" x2="844" y2="166" stroke="#D9D6CD" stroke-width="1"/>
-  <text x="560" y="200" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="19" class="sf d1" fill="#7C7B76">贡献总数</text>
-  <text x="844" y="206" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="38" font-weight="500" text-anchor="end" class="sf d1" fill="#2A2A28">723</text>
-  <text x="560" y="222" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="14" class="sf d2" fill="#7C7B76">近 12 个月</text>
-  <line x1="560" y1="238" x2="844" y2="238" stroke="#D9D6CD" stroke-width="1"/>
+  <line x1="560" y1="166" x2="844" y2="166" stroke="#E7EAEE" stroke-width="1"/>
+  <text x="560" y="200" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="19" class="sf d1" fill="#6E7278">贡献总数</text>
+  <text x="844" y="206" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="38" font-weight="500" text-anchor="end" class="sf d1" fill="#14171A">724</text>
+  <text x="560" y="222" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="14" class="sf d2" fill="#6E7278">近 12 个月</text>
+  <line x1="560" y1="238" x2="844" y2="238" stroke="#E7EAEE" stroke-width="1"/>
   <g transform="translate(542,270) scale(0.9)"><g class="fl"><path d="M 1.5 0.67 C 1.5 0.67 2.24 3.32 2.24 5.47 C 2.24 7.53 0.89 9.2 -1.17 9.2 C -3.23 9.2 -4.79 7.53 -4.79 5.47 L -4.76 5.11 C -6.78 7.51 -8 10.62 -8 13.99 C -8 18.41 -4.42 22 0 22 C 4.42 22 8 18.41 8 13.99 C 8 8.6 5.41 3.79 1.5 0.67 Z M -0.29 19 C -2.07 19 -3.51 17.6 -3.51 15.86 C -3.51 14.24 -2.46 13.1 -0.7 12.74 C 1.07 12.38 2.9 11.53 3.92 10.16 C 4.31 11.45 4.51 12.81 4.51 14.2 C 4.51 16.85 2.36 19 -0.29 19 Z" fill="#C7322E"/></g></g>
-  <text x="560" y="268" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="19" class="sf d2" fill="#7C7B76">当前连续</text>
-  <g class="sp"><text x="844" y="274" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="38" font-weight="500" text-anchor="end" fill="#2A2A28">7</text></g>
-  <text x="560" y="290" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="14" class="sf d3" fill="#7C7B76">自 09-25</text>
-  <line x1="560" y1="306" x2="844" y2="306" stroke="#D9D6CD" stroke-width="1"/>
-  <text x="560" y="336" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="19" class="sf d3" fill="#7C7B76">最长连续</text>
-  <text x="844" y="342" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="38" font-weight="500" text-anchor="end" class="sf d3" fill="#2A2A28">12</text>
-  <text x="560" y="358" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="14" class="sf d4" fill="#7C7B76">08-27 – 09-07</text>
-  <text x="56" y="420" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="28" font-style="italic" fill="#7C7B76">Protocols and developer tooling, built in the open.</text>
-  <text x="56" y="462" font-family="Songti SC, Noto Serif CJK SC, SimSun, serif" font-size="26" fill="#7C7B76">在清华读本科，自己搭协议与开发者工具。</text>
-  <line x1="56" y1="490" x2="112" y2="490" stroke="#C7322E" stroke-width="3"/>
-  <line x1="56" y1="559" x2="844" y2="559" stroke="#D9D6CD" stroke-width="1"/>
-  <text x="56" y="603" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="4.0" fill="#C7322E">作品选 · SELECTED</text>
-  <text x="56" y="701" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="3.0" fill="#C7322E">01 — 整合包生态</text>
-  <text x="56" y="757" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="44" fill="#2A2A28">DSH-PackForge</text>
-  <text x="56" y="793" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="24" font-style="italic" fill="#7C7B76">DeepSeek Harness 的整合包与插件生态。</text>
-  <text x="844" y="757" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="44" font-weight="500" text-anchor="end" fill="#2A2A28">48★</text>
-  <text x="844" y="793" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" text-anchor="end" fill="#7C7B76">8 个仓库 · MIT / CC0</text>
-  <line x1="56" y1="843" x2="844" y2="843" stroke="#D9D6CD" stroke-width="1"/>
-  <text x="56" y="907" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="3.0" fill="#C7322E">02 — 通信协议</text>
-  <text x="56" y="963" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="44" fill="#2A2A28">KnotLink-Protocol</text>
-  <text x="56" y="999" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="24" font-style="italic" fill="#7C7B76">一套让程序之间互相通信的协议。</text>
-  <text x="844" y="963" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="44" font-weight="500" text-anchor="end" fill="#2A2A28">8★</text>
-  <text x="844" y="999" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" text-anchor="end" fill="#7C7B76">9 个仓库 · SDK 4★（C++）</text>
-  <line x1="56" y1="1049" x2="844" y2="1049" stroke="#D9D6CD" stroke-width="1"/>
-  <text x="56" y="1113" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="3.0" fill="#C7322E">03 — 桌面工具</text>
-  <text x="56" y="1169" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="44" fill="#2A2A28">PyToEXE</text>
-  <text x="56" y="1205" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="24" font-style="italic" fill="#7C7B76">一个可以把 Python 文件转换成 exe 程序的工具。</text>
-  <text x="844" y="1169" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="44" font-weight="500" text-anchor="end" fill="#2A2A28">19★</text>
-  <text x="844" y="1205" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" text-anchor="end" fill="#7C7B76">Python · 最后更新 2023</text>
-  <line x1="56" y1="1273" x2="844" y2="1273" stroke="#D9D6CD" stroke-width="1"/>
-  <text x="56" y="1317" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="4.0" fill="#C7322E">方式 · SETUP</text>
-  <line x1="450" y1="1397" x2="450" y2="1601" stroke="#D9D6CD" stroke-width="1"/>
-  <text x="56" y="1417" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="3.0" fill="#7C7B76">写代码</text>
-  <text x="56" y="1461" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="26" fill="#2A2A28">DeepSeek Harness · Claude</text>
-  <text x="480" y="1417" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="3.0" fill="#7C7B76">编辑器</text>
-  <text x="480" y="1461" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="26" fill="#2A2A28">VS Code</text>
-  <text x="56" y="1541" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="3.0" fill="#7C7B76">在学</text>
-  <text x="56" y="1585" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="26" fill="#2A2A28">物理 · 计算机科学</text>
-  <text x="480" y="1541" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="3.0" fill="#7C7B76">B 站</text>
-  <text x="480" y="1585" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="26" fill="#2A2A28">技术分享与记录</text>
-  <line x1="56" y1="1661" x2="844" y2="1661" stroke="#D9D6CD" stroke-width="1"/>
-  <text x="56" y="1705" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="4.0" fill="#C7322E">数字 · NUMBERS</text>
-  <line x1="446" y1="1789" x2="446" y2="2065" stroke="#D9D6CD" stroke-width="1"/>
-  <text x="56" y="1811" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="3.0" fill="#7C7B76">公开仓库</text>
-  <text x="56" y="1879" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="64" font-weight="500" fill="#2A2A28">49</text>
-  <text x="56" y="1909" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" fill="#7C7B76">个人 32 · 组织 17</text>
-  <text x="474" y="1811" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="3.0" fill="#7C7B76">星标总数</text>
-  <text x="474" y="1879" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="64" font-weight="500" fill="#2A2A28">127</text>
-  <text x="474" y="1909" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" fill="#7C7B76">个人 24 · 组织 103</text>
-  <text x="56" y="1967" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="3.0" fill="#7C7B76">组织</text>
-  <text x="56" y="2035" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="64" font-weight="500" fill="#2A2A28">2</text>
-  <text x="56" y="2065" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" fill="#7C7B76">DSH-PackForge · KnotLink</text>
-  <text x="474" y="1967" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="3.0" fill="#7C7B76">关注者</text>
-  <text x="474" y="2035" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="64" font-weight="500" fill="#2A2A28">5</text>
-  <line x1="56" y1="2089" x2="844" y2="2089" stroke="#D9D6CD" stroke-width="1"/>
-  <text x="56" y="2133" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="3.0" fill="#7C7B76">常用语言</text>
-  <text x="220" y="2133" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="24" fill="#2A2A28">JavaScript · C++ · Python · C# · TypeScript</text>
-  <line x1="56" y1="2177" x2="844" y2="2177" stroke="#D9D6CD" stroke-width="1"/>
-  <text x="56" y="2221" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="26" fill="#2A2A28">hxh26@tsinghua.edu.cn</text>
-  <text x="844" y="2221" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" text-anchor="end" fill="#7C7B76">更新 · 2026-10-01</text>
+  <text x="560" y="268" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="19" class="sf d2" fill="#6E7278">当前连续</text>
+  <g class="sp"><text x="844" y="274" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="38" font-weight="500" text-anchor="end" fill="#14171A">7</text></g>
+  <text x="560" y="290" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="14" class="sf d3" fill="#6E7278">自 09-25</text>
+  <line x1="560" y1="306" x2="844" y2="306" stroke="#E7EAEE" stroke-width="1"/>
+  <text x="560" y="336" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="19" class="sf d3" fill="#6E7278">最长连续</text>
+  <text x="844" y="342" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="38" font-weight="500" text-anchor="end" class="sf d3" fill="#14171A">12</text>
+  <text x="560" y="358" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="14" class="sf d4" fill="#6E7278">08-27 – 09-07</text>
+  <text x="56" y="330" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="22" font-style="italic" fill="#6E7278">Protocols and developer tooling,</text>
+  <text x="56" y="362" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="22" font-style="italic" fill="#6E7278">built in the open.</text>
+  <text x="56" y="404" font-family="Songti SC, Noto Serif CJK SC, SimSun, serif" font-size="20" fill="#6E7278">在清华读本科，自己搭协议与开发者工具。</text>
+  <line x1="56" y1="432" x2="112" y2="432" stroke="#C7322E" stroke-width="3"/>
+  <line x1="56" y1="506" x2="844" y2="506" stroke="#E7EAEE" stroke-width="1"/>
+  <text x="56" y="550" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="4.0" fill="#C7322E">作品选 · SELECTED</text>
+  <text x="56" y="648" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="3.0" fill="#C7322E">01 — 整合包生态</text>
+  <text x="56" y="704" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="44" fill="#14171A">DSH-PackForge</text>
+  <text x="56" y="740" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="24" font-style="italic" fill="#6E7278">DeepSeek Harness 的整合包与插件生态。</text>
+  <text x="844" y="704" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="44" font-weight="500" text-anchor="end" fill="#14171A">48★</text>
+  <text x="844" y="740" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" text-anchor="end" fill="#6E7278">8 个仓库 · MIT / CC0</text>
+  <line x1="56" y1="790" x2="844" y2="790" stroke="#E7EAEE" stroke-width="1"/>
+  <text x="56" y="854" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="3.0" fill="#C7322E">02 — 通信协议</text>
+  <text x="56" y="910" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="44" fill="#14171A">KnotLink-Protocol</text>
+  <text x="56" y="946" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="24" font-style="italic" fill="#6E7278">一套让程序之间互相通信的协议。</text>
+  <text x="844" y="910" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="44" font-weight="500" text-anchor="end" fill="#14171A">8★</text>
+  <text x="844" y="946" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" text-anchor="end" fill="#6E7278">9 个仓库 · SDK 4★（C++）</text>
+  <line x1="56" y1="996" x2="844" y2="996" stroke="#E7EAEE" stroke-width="1"/>
+  <text x="56" y="1060" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="3.0" fill="#C7322E">03 — 桌面工具</text>
+  <text x="56" y="1116" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="44" fill="#14171A">PyToEXE</text>
+  <text x="56" y="1152" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="24" font-style="italic" fill="#6E7278">一个可以把 Python 文件转换成 exe 程序的工具。</text>
+  <text x="844" y="1116" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="44" font-weight="500" text-anchor="end" fill="#14171A">19★</text>
+  <text x="844" y="1152" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" text-anchor="end" fill="#6E7278">Python · 最后更新 2023</text>
+  <line x1="56" y1="1220" x2="844" y2="1220" stroke="#E7EAEE" stroke-width="1"/>
+  <text x="56" y="1264" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="4.0" fill="#C7322E">方式 · SETUP</text>
+  <line x1="450" y1="1344" x2="450" y2="1548" stroke="#E7EAEE" stroke-width="1"/>
+  <text x="56" y="1364" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="3.0" fill="#6E7278">写代码</text>
+  <text x="56" y="1408" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="26" fill="#14171A">DeepSeek Harness · Claude</text>
+  <text x="480" y="1364" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="3.0" fill="#6E7278">编辑器</text>
+  <text x="480" y="1408" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="26" fill="#14171A">VS Code</text>
+  <text x="56" y="1488" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="3.0" fill="#6E7278">在学</text>
+  <text x="56" y="1532" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="26" fill="#14171A">物理 · 计算机科学</text>
+  <text x="480" y="1488" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="3.0" fill="#6E7278">B 站</text>
+  <text x="480" y="1532" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="26" fill="#14171A">技术分享与记录</text>
+  <line x1="56" y1="1608" x2="844" y2="1608" stroke="#E7EAEE" stroke-width="1"/>
+  <text x="56" y="1652" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="4.0" fill="#C7322E">数字 · NUMBERS</text>
+  <line x1="446" y1="1736" x2="446" y2="2012" stroke="#E7EAEE" stroke-width="1"/>
+  <text x="56" y="1758" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="3.0" fill="#6E7278">公开仓库</text>
+  <text x="56" y="1826" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="64" font-weight="500" fill="#14171A">49</text>
+  <text x="56" y="1856" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" fill="#6E7278">个人 32 · 组织 17</text>
+  <text x="474" y="1758" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="3.0" fill="#6E7278">星标总数</text>
+  <text x="474" y="1826" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="64" font-weight="500" fill="#14171A">127</text>
+  <text x="474" y="1856" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" fill="#6E7278">个人 24 · 组织 103</text>
+  <text x="56" y="1914" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="3.0" fill="#6E7278">组织</text>
+  <text x="56" y="1982" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="64" font-weight="500" fill="#14171A">2</text>
+  <text x="56" y="2012" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" fill="#6E7278">DSH-PackForge · KnotLink</text>
+  <text x="474" y="1914" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="3.0" fill="#6E7278">关注者</text>
+  <text x="474" y="1982" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="64" font-weight="500" fill="#14171A">5</text>
+  <line x1="56" y1="2036" x2="844" y2="2036" stroke="#E7EAEE" stroke-width="1"/>
+  <text x="56" y="2080" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="3.0" fill="#6E7278">常用语言</text>
+  <text x="220" y="2080" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="24" fill="#14171A">JavaScript · C++ · Python · C# · TypeScript</text>
+  <line x1="56" y1="2124" x2="844" y2="2124" stroke="#E7EAEE" stroke-width="1"/>
+  <text x="56" y="2168" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="26" fill="#14171A">hxh26@tsinghua.edu.cn</text>
+  <text x="844" y="2168" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" text-anchor="end" fill="#6E7278">更新 · 2026-10-01</text>
 </svg>

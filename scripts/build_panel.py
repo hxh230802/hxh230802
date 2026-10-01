@@ -44,19 +44,25 @@ CONTENT = RIGHT - MARGIN    # 788
 MID = 450                   # 作品选 / 方式 的竖发丝线
 COL2 = 480                  # 第二栏起点
 SPLIT = 500                 # 刊头左右分栏的竖发丝线
+LEFT_W = 424                # 刊头左栏可用宽度 —— dek 收在这里，不横穿到右栏
 COL_R = 560                 # 刊头右栏起点（连续贡献）
 
 SANS = "Helvetica Neue, Segoe UI, Arial, sans-serif"
 SERIF = "Palatino Linotype, Palatino, Book Antiqua, Georgia, serif"
 SONGTI = "Songti SC, Noto Serif CJK SC, SimSun, serif"
 
-LIGHT = {"ground": "#F4F2EC", "ink": "#2A2A28", "sec": "#7C7B76",
-         "rule": "#D9D6CD", "accent": "#C7322E"}
-DARK = {"ground": "#1B1A18", "ink": "#EDEAE2", "sec": "#928E86",
-        "rule": "#35322D", "accent": "#D9564F"}
+# 底色直接对齐 GitHub 各主题自己的背景（浅色 #FFFFFF / 深色 #0D1117），
+# 面板才不会在页面上显出一块灰板。中性冷灰的取色参考 onethu.github.io
+# （--bg #ffffff / ink #0f1115 / muted #81858c / 边框 #ebeef2）。
+# 强调色仍只保留一支红，别处一律中性。
+LIGHT = {"ground": "#FFFFFF", "ink": "#14171A", "sec": "#6E7278",
+         "rule": "#E7EAEE", "accent": "#C7322E"}
+DARK = {"ground": "#0D1117", "ink": "#E6EDF3", "sec": "#8B949E",
+        "rule": "#2A3038", "accent": "#D9564F"}
 
 KICKER = "TSINGHUA UNIVERSITY · BEIJING"
-DEK_EN = "Protocols and developer tooling, built in the open."
+# SVG 不自动折行；英文 dek 一行放不进左栏，只能手动断
+DEK_EN_LINES = ["Protocols and developer tooling,", "built in the open."]
 DEK_CN = "在清华读本科，自己搭协议与开发者工具。"
 
 SETUP = [
@@ -109,7 +115,7 @@ LINKS_END = "<!-- LINKS:END -->"
 # 关键纪律：基础样式必须自带可见性，动画只负责「加动作」。
 # 早先这里用 opacity: 0 + fill-mode: both，结果任何不跑 CSS 动画的渲染器
 # （或只是截图截早了）都会让整栏文字彻底消失 —— 内容不能依赖动画才可见。
-# 所以这里动画只改 font-size / transform，任何一项失效，元素都仍然看得见。
+# 所以这里动画只改 transform（缩放 / 位移），任何一项失效，元素都仍然看得见。
 PANEL_STYLE = """
     @keyframes streak-pop  { 0% { transform: scale(.3) }
                              76% { transform: scale(1.12) }
@@ -389,7 +395,8 @@ class Panel:
         self.animated = False
 
     def text(self, x, s, size, fill, *, y=None, family=SANS, weight=None,
-             ls=None, italic=False, anchor=None, latin=0.55, cls=None, wrap=None):
+             ls=None, italic=False, anchor=None, latin=0.55, cls=None, wrap=None,
+             max_w=None):
         yy = self.y if y is None else y
         attrs = [f'x="{x}"', f'y="{yy}"', f'font-family="{family}"',
                  f'font-size="{size}"']
@@ -410,8 +417,11 @@ class Panel:
             adv = sum(_advance(c, latin) for c in s) * size
             if ls:
                 adv += ls * max(len(s) - 1, 0)
-            # 可用宽度就是「右边界 - 起点」，不要再去传一个偏移过的 limit
+            # 可用宽度默认是「右边界 - 起点」；分栏里的文字再用 max_w 收窄，
+            # 不然像 dek 这种会一路横穿到右栏下面去
             available = RIGHT - x
+            if max_w is not None:
+                available = min(available, max_w)
             if adv > available + 0.5:
                 self.warnings.append(
                     f"OVERFLOW [{self.suffix or 'light'}] y={yy} x={x} size={size} "
@@ -479,7 +489,7 @@ def block_masthead(p: Panel, data: dict) -> None:
     p.y = 64
     p.text(MARGIN, KICKER, 22, p.p["accent"], ls=4.0, weight="600")
     p.hline(84)
-    p.vline(SPLIT, 112, 380)
+    p.vline(SPLIT, 112, 452)
 
     # 字标缩到左半边，把右半边让给连续贡献。
     # x=42 让 Palatino 的左边距把字形墨迹落到 x=56 的对齐线上。
@@ -508,10 +518,13 @@ def block_masthead(p: Panel, data: dict) -> None:
             if i < len(rows) - 1:
                 p.hline(y + 38, x1=COL_R)
 
-    p.text(MARGIN, DEK_EN, 28, p.p["sec"], y=420, family=SERIF, italic=True, latin=0.50)
-    p.text(MARGIN, DEK_CN, 26, p.p["sec"], y=462, family=SONGTI)
-    p.hline(490, x1=MARGIN, x2=112, sw=3, color=p.p["accent"])
-    p.y = 515
+    # dek 收在左栏里（max_w），不再横穿到「贡献」下面
+    for i, line in enumerate(DEK_EN_LINES):
+        p.text(MARGIN, line, 22, p.p["sec"], y=330 + i * 32,
+               family=SERIF, italic=True, latin=0.50, max_w=LEFT_W)
+    p.text(MARGIN, DEK_CN, 20, p.p["sec"], y=404, family=SONGTI, max_w=LEFT_W)
+    p.hline(432, x1=MARGIN, x2=112, sw=3, color=p.p["accent"])
+    p.y = 462
 
 
 def block_selected(p: Panel, data: dict) -> None:
