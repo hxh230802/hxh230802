@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="2248" viewBox="0 0 900 2248" role="img" aria-labelledby="panelTitleDark panelDescDark">
   <title id="panelTitleDark">HXH — 清华大学 · 北京</title>
-  <desc id="panelDescDark">hxh230802 的主页面板：清华大学在读，方向人工智能。近一年贡献 969 次，当前连续 2 天，最长连续 12 天。公开仓库 50 个，星标 147 个，组织 2 个，关注者 5 人。代表项目：DSH-PackForge、KnotLink-Protocol、PyToEXE。</desc>
+  <desc id="panelDescDark">hxh230802 的主页面板：清华大学在读，方向人工智能。近一年贡献 969 次，当前连续 2 天，最长连续 12 天。公开仓库 50 个，星标 151 个，组织 2 个，关注者 5 人。代表项目：DSH-PackForge、KnotLink-Protocol、PyToEXE。</desc>
   <style>
     @keyframes streak-pop  { 0% { transform: scale(.3) }
                              76% { transform: scale(1.12) }
@@ -44,7 +44,7 @@
   <text x="68" y="652" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="3.0" fill="#D9564F">01 — 整合包生态</text>
   <text x="68" y="708" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="44" fill="#E6EDF3">DSH-PackForge</text>
   <text x="68" y="744" font-family="Palatino Linotype, Palatino, Book Antiqua, Georgia, serif" font-size="24" font-style="italic" fill="#8B949E">DeepSeek Harness 的整合包与插件生态。</text>
-  <text x="832" y="708" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="44" font-weight="500" text-anchor="end" fill="#E6EDF3">53★</text>
+  <text x="832" y="708" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="44" font-weight="500" text-anchor="end" fill="#E6EDF3">54★</text>
   <text x="832" y="744" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" text-anchor="end" fill="#8B949E">9 个仓库 · MIT / CC0</text>
   <line x1="68" y1="794" x2="832" y2="794" stroke="#2A3038" stroke-width="1"/>
   <text x="68" y="858" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="3.0" fill="#D9564F">02 — 通信协议</text>
@@ -74,8 +74,8 @@
   <text x="68" y="1838" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="64" font-weight="500" fill="#E6EDF3">50</text>
   <text x="68" y="1868" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" fill="#8B949E">个人 32 · 组织 18</text>
   <text x="473" y="1770" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="3.0" fill="#8B949E">星标总数</text>
-  <text x="473" y="1838" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="64" font-weight="500" fill="#E6EDF3">147</text>
-  <text x="473" y="1868" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" fill="#8B949E">个人 23 · 组织 124</text>
+  <text x="473" y="1838" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="64" font-weight="500" fill="#E6EDF3">151</text>
+  <text x="473" y="1868" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" fill="#8B949E">个人 23 · 组织 128</text>
   <text x="68" y="1926" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" letter-spacing="3.0" fill="#8B949E">组织</text>
   <text x="68" y="1994" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="64" font-weight="500" fill="#E6EDF3">2</text>
   <text x="68" y="2024" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" fill="#8B949E">DSH-PackForge · KnotLink</text>
@@ -86,5 +86,5 @@
   <text x="221" y="2092" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="24" fill="#E6EDF3">JavaScript · C++ · Python · C# · TypeScript</text>
   <line x1="68" y1="2136" x2="832" y2="2136" stroke="#2A3038" stroke-width="1"/>
   <text x="68" y="2180" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="26" fill="#E6EDF3">hxh26@tsinghua.edu.cn</text>
-  <text x="832" y="2180" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" text-anchor="end" fill="#8B949E">更新 · 2026-10-09</text>
+  <text x="832" y="2180" font-family="Helvetica Neue, Segoe UI, Arial, sans-serif" font-size="22" text-anchor="end" fill="#8B949E">更新 · 2026-10-10</text>
 </svg>
